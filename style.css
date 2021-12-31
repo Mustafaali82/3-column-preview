@@ -44,8 +44,9 @@
 }
 
 img {
-  margin-top: 40px;
-  margin-left: 35px;
+    width: 70px;
+    margin-top: 40px;
+    margin-left: 35px;
 }
 
 h1 {
@@ -81,4 +82,49 @@ button {
   font-weight: 300;
   font-size: 16px;
   box-shadow: 5px 6px 25px -4px #00000061;
+}
+
+button:hover{
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 3px solid white;
+   color: white !important;
+   transition: 0.7s;
+}
+
+@media screen and (max-width: 767px) {
+    .main{
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .card-one{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .card-three{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media screen and  (max-width: 1024px) and (min-width: 768px) {
+    .main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .card-one{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .card-three{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
 }
